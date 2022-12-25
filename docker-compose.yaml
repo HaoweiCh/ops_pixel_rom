@@ -1,0 +1,7 @@
+version: "3"
+services:
+  base:
+    image: haoweich/ops_pixel_rom:base
+    build:
+      dockerfile: ./docker/Dockerfile
+    command: bash -c 'echo "ops env" && sleep 3600'
